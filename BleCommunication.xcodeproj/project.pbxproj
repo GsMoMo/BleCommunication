@@ -11,6 +11,10 @@
 		ACE2FEA027841BA800A7BFA9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE2FE9F27841BA800A7BFA9 /* ContentView.swift */; };
 		ACE2FEA227841BA900A7BFA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE2FEA127841BA900A7BFA9 /* Assets.xcassets */; };
 		ACE2FEA527841BA900A7BFA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE2FEA427841BA900A7BFA9 /* Preview Assets.xcassets */; };
+		ACE2FEB12784238700A7BFA9 /* BleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE2FEB02784238700A7BFA9 /* BleManager.swift */; };
+		ACE2FEB327842C9400A7BFA9 /* Peripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE2FEB227842C9400A7BFA9 /* Peripheral.swift */; };
+		ACE2FEB527842E9E00A7BFA9 /* Characteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE2FEB427842E9E00A7BFA9 /* Characteristic.swift */; };
+		ACE2FEB727842F4B00A7BFA9 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE2FEB627842F4B00A7BFA9 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		ACE2FE9F27841BA800A7BFA9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ACE2FEA127841BA900A7BFA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACE2FEA427841BA900A7BFA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACE2FEB02784238700A7BFA9 /* BleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleManager.swift; sourceTree = "<group>"; };
+		ACE2FEB227842C9400A7BFA9 /* Peripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peripheral.swift; sourceTree = "<group>"; };
+		ACE2FEB427842E9E00A7BFA9 /* Characteristic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characteristic.swift; sourceTree = "<group>"; };
+		ACE2FEB627842F4B00A7BFA9 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,11 @@
 			isa = PBXGroup;
 			children = (
 				ACE2FE9D27841BA800A7BFA9 /* BleCommunicationApp.swift */,
-				ACE2FE9F27841BA800A7BFA9 /* ContentView.swift */,
+				ACE2FEAB278420C700A7BFA9 /* Extensions */,
+				ACE2FEAD278420D900A7BFA9 /* Utilities */,
+				ACE2FEAC278420D200A7BFA9 /* Services */,
+				ACE2FEAF2784211200A7BFA9 /* Models */,
+				ACE2FEAE278420EE00A7BFA9 /* Core */,
 				ACE2FEA127841BA900A7BFA9 /* Assets.xcassets */,
 				ACE2FEA327841BA900A7BFA9 /* Preview Content */,
 			);
@@ -65,6 +77,46 @@
 				ACE2FEA427841BA900A7BFA9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACE2FEAB278420C700A7BFA9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ACE2FEAC278420D200A7BFA9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ACE2FEAD278420D900A7BFA9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				ACE2FEB02784238700A7BFA9 /* BleManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		ACE2FEAE278420EE00A7BFA9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ACE2FE9F27841BA800A7BFA9 /* ContentView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		ACE2FEAF2784211200A7BFA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACE2FEB227842C9400A7BFA9 /* Peripheral.swift */,
+				ACE2FEB427842E9E00A7BFA9 /* Characteristic.swift */,
+				ACE2FEB627842F4B00A7BFA9 /* Service.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE2FEB727842F4B00A7BFA9 /* Service.swift in Sources */,
 				ACE2FEA027841BA800A7BFA9 /* ContentView.swift in Sources */,
 				ACE2FE9E27841BA800A7BFA9 /* BleCommunicationApp.swift in Sources */,
+				ACE2FEB527842E9E00A7BFA9 /* Characteristic.swift in Sources */,
+				ACE2FEB12784238700A7BFA9 /* BleManager.swift in Sources */,
+				ACE2FEB327842C9400A7BFA9 /* Peripheral.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
