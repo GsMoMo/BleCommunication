@@ -22,4 +22,8 @@ struct Characteristic: Identifiable {
         self.readValue = readValue
         self.service = service
     }
+    
+    func updateReadValue(readValue: String) -> Characteristic {
+        return Characteristic(characteristic: characteristic, description: description, uuid: uuid, readValue: readValue, service: service)
+    }
 }

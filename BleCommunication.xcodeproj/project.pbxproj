@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC3EC29127852CBB003C4715 /* BleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3EC29027852CBB003C4715 /* BleManager.swift */; };
 		ACE2FE9E27841BA800A7BFA9 /* BleCommunicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE2FE9D27841BA800A7BFA9 /* BleCommunicationApp.swift */; };
 		ACE2FEA027841BA800A7BFA9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE2FE9F27841BA800A7BFA9 /* ContentView.swift */; };
 		ACE2FEA227841BA900A7BFA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE2FEA127841BA900A7BFA9 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC3EC29027852CBB003C4715 /* BleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleManager.swift; sourceTree = "<group>"; };
 		ACE2FE9A27841BA800A7BFA9 /* BleCommunication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BleCommunication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE2FE9D27841BA800A7BFA9 /* BleCommunicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleCommunicationApp.swift; sourceTree = "<group>"; };
 		ACE2FE9F27841BA800A7BFA9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +42,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC3EC2892784440E003C4715 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		ACE2FE9127841BA700A7BFA9 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				ACE2FE9D27841BA800A7BFA9 /* BleCommunicationApp.swift */,
+				AC3EC2892784440E003C4715 /* Protocols */,
 				ACE2FEAB278420C700A7BFA9 /* Extensions */,
 				ACE2FEAD278420D900A7BFA9 /* Utilities */,
 				ACE2FEAC278420D200A7BFA9 /* Services */,
@@ -82,6 +92,7 @@
 		ACE2FEAB278420C700A7BFA9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AC3EC29027852CBB003C4715 /* BleManager.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -195,6 +206,7 @@
 				ACE2FEB527842E9E00A7BFA9 /* Characteristic.swift in Sources */,
 				ACE2FEB12784238700A7BFA9 /* BleManager.swift in Sources */,
 				ACE2FEB327842C9400A7BFA9 /* Peripheral.swift in Sources */,
+				AC3EC29127852CBB003C4715 /* BleManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
